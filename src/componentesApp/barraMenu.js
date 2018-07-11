@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from  'prop-types'
 import {Encabezado,Boton, Imagen,GrdContainer,GrdRow,GrdCol,BarraTitulo,Lista,ListaItem,Enlace} from '../componentesBase/'
+import BarraMenuWebsiteName from './barraMenuWebsiteName'
 
 const BarraMenu = (props) =>
                    <div>
-                       <BarraTitulo clase='navbar navbar-expand-lg navbar-dark bg-dark'>
-                          <div className="container">
-                              <GrdRow alineacion='start' clase="collapse navbar-collapse">
-                                  <Lista clase="navbar-nav mr-auto">
-                                      <ListaItem clase='nav-item active'>
+                       <BarraTitulo clase='navbar navbar-default'>
+                          <GrdContainer esFluido={true}>
+                              <BarraMenuWebsiteName nombreWebsite='My Movie DataBase' />
+                                  <Lista clase="nav navbar-nav">
+                                      <ListaItem clase='nav-item'>
                                         <Enlace clase="nav-link">
                                           Home
                                         </Enlace>
@@ -29,8 +30,7 @@ const BarraMenu = (props) =>
                                         </Enlace>
                                       </ListaItem>
                                   </Lista>
-                              </GrdRow>
-                          </div>
+                          </GrdContainer>
                        </BarraTitulo>
                   </div>
 

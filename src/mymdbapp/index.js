@@ -1,1 +1,4 @@
-export { default as Mymdb } from "./mymdb";
+import Mymdb from "./mymdb";
+
+
+export default Mymdb

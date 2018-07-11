@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from  'prop-types'
 
 const Enlace = (props) => (
-                   <a className={props.clase} href={props.enlace} title={props.txtalt}>
+                   <a href={props.enlace} title={props.txtalt} className={props.clase}>
                      {props.children}
                   </a>
             )

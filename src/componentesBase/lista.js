@@ -3,11 +3,11 @@ import PropTypes from  'prop-types'
 
 
 const Lista = (props) => (
-              <div class="collapse navbar-collapse">
+              <div className="collapse navbar-collapse">
                    <ul className={props.clase}>
                      {props.children}
                   </ul>
-              </div>    
+              </div>
             )
 
 

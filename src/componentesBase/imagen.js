@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 const Imagen = (props) => {
-  return (<div><img src={props.imagen} className={props.clase} alt={props.txtalt} title={props.txtalt} /></div>)
+  return (<img src={props.imagen} className={props.clase} alt={props.txtalt} title={props.txtalt} />)
 }
 
 Imagen.propTypes = {

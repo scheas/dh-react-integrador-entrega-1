@@ -3,17 +3,19 @@ import PropTypes from  'prop-types'
 
 
 const GrdCol = (props) => (
-                   <div className={`col`}>
+                   <div className={props.clase}>
                      {props.children}
                   </div>
             )
 
 
 GrdCol.propTypes = {
-        alineacion: PropTypes.oneOf(['start','end','center'])
+        alineacion: PropTypes.oneOf(['start','end','center']),
+        clase: PropTypes.string,
 }
 GrdCol.defaultProps = {
-        alineacion: "start"
+        alineacion: "start",
+        clase: "col-md-2",
 }
 
 
